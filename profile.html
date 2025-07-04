@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/1200px-Netflix_icon.svg.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="bg_black">
+    <header>
+      <nav class="navbar navbar-dark bg_black navbar-expand-lg">
+        <img
+          class="navbar-brand"
+          src="./assets/netflix_logo.png"
+          width="150px"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html"
+                >Home <span class="sr-only"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container pt-3">
+        <h1 class="mb-4 text-light display-3">Edit Profile</h1>
+        <div class="row justify-content-center border-top border-secondary">
+          <div class="mt-4 d-flex justify-content-center col-12 col-md-2">
+            <img
+              src="./assets/avatar.png"
+              alt="Profile Icon"
+              class="profile-img"
+            />
+          </div>
+          <div class="mt-4 col-12 col-md-10">
+            <div>
+              <input
+                type="text"
+                class="form-control w-75 bg-secondary border-0 text-light"
+                id="profileName"
+                value="Strive Student"
+              />
+            </div>
+            <div class="mt-4 pb-4 border-bottom border-secondary">
+              <label class="text-secondary" for="language">Language:</label>
+              <select
+                class="form-control w-50 bg_black text-light"
+                id="language"
+              >
+                <option selected>English</option>
+                <option>Italian</option>
+                <option>Spanish</option>
+                <option>French</option>
+              </select>
+            </div>
+            <div class="py-4 pb-5 border-bottom border-secondary">
+              <p class="h5 text-secondary mb-5">Maturity Settings:</p>
+              <span class="text-light bg_gray p-3 h5"
+                >ALL MATURITY RATINGS</span
+              >
+              <p class="mt-4 text-light">
+                Show titles of all maturity ratings for this profile.
+              </p>
+              <button class="px-4 py-2 bg_black btn btn-secondary">
+                <a class="h5 text-secondary" href="#">EDIT</a>
+              </button>
+            </div>
+            <div class="py-4">
+              <p class="h5 text-secondary mb-2">Autoplay Control</p>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="autoplayNext"
+                  class="check"
+                />
+                <label class="form-check-label text-light" for="autoplayNext"
+                  >Autoplay next episode in a series on all devices.</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="autoplayPreviews"
+                  class="check"
+                />
+                <label
+                  class="form-check-label text-light"
+                  for="autoplayPreviews"
+                  >Autoplay previews while browsing on all devices.</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 d-flex border-top border-secondary pt-3">
+          <button class="px-4 py-2 mr-5 hw bg_black btn btn-secondary">
+            <a class="h5 text-secondary" href="#">SAVE</a>
+          </button>
+          <button class="px-4 py-2 mr-5 hw bg_black btn btn-secondary">
+            <a class="h5 text-secondary" href="#">CANCEL</a>
+          </button>
+          <button class="px-4 py-2 mr-5 hw bg_black btn btn-secondary">
+            <a class="h5 text-secondary" href="#">DELETE PROFILE</a>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-mt-4.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

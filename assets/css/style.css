@@ -1,0 +1,49 @@
+.bg_black {
+  background-color: #141414;
+}
+
+.movie-img {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 576px) {
+  .movie-img {
+    width: 220px;
+  }
+  .profile-img {
+    width: 220px;
+  }
+}
+
+@media (min-width: 768px) {
+  .movie-img {
+    width: 240px;
+  }
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .movie-img {
+    width: 260px;
+  }
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.mov:hover {
+  transform: scale(1.1);
+}
+
+.bg_gray {
+  background-color: #333333;
+}
+.bg_gray2 {
+  background-color: #dbd6d6;
+}
